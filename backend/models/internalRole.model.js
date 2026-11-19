@@ -10,7 +10,7 @@ const internalRolesSchema = new mongoose.Schema({
     key:{
         type:String,
         required:true,
-        unquie:true,
+        unique:true,
         lowercase:true,
         trim:true
     },
