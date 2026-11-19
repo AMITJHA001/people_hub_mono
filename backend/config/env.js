@@ -11,6 +11,6 @@ if(Number.isNaN(port)){
     throw new Error("App not configured!");
 }
 
-const config = { PORT:port }
+const env = { PORT:port }
 
-export default config;
+export default env;
