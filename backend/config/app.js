@@ -5,6 +5,12 @@ if(!process.env.PORT){
     throw new Error("App not configured!") 
 }
 
-const config = { PORT:process.env.PORT }
+const port = Number(process.env.PORT);
+
+if(Number.isNaN(port)){
+    throw new Error("App not configured!");
+}
+
+const config = { PORT:port }
 
 export default config;
