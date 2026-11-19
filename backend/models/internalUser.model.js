@@ -25,6 +25,6 @@ const internalUserSchema = new mongoose.Schema({
 })
 
 
-const InternalUser = mongoose.model("InternalUser",internalUserSchema,"internal_user")
+const InternalUser = mongoose.model("InternalUser",internalUserSchema,"internal_users")
 
 export default InternalUser;
