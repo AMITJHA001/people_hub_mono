@@ -12,9 +12,9 @@ const connectDB = async() => {
         }
     }catch(e){
           logger.error("MongoDB connection failed", {
-            message: error.message
+            message: e.message
         });
-        throw error;
+        throw e;
     }
 }
 
