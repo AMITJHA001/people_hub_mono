@@ -6,7 +6,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/api',appRoutes)
-app.get('/',(req,res)=>{
+app.get('/health',(req,res)=>{
     res.status(200).json({message:"working"})
 })
 
